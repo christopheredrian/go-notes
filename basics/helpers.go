@@ -2,6 +2,7 @@ package helpers
 
 import (
 	"bufio"
+	"fmt"
 	"os"
 )
 
@@ -16,4 +17,10 @@ func getStdIn() []string {
 
 	return lines
 
+}
+
+func formatAsFloat() {
+	first := 5.0
+	second := 3.0
+	fmt.Printf("%.1f", first+second)
 }
